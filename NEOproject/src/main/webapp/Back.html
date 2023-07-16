@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="Bak.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <style>
+    .additional-info {
+      display: none;
+    }
+    
+    .social-list li:hover .additional-info {
+      display: inline;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    
+    .container {
+      margin-top: 50px;
+    }
+    
+    .bg-part1 {
+      background-color: #fff;
+      padding-top: 20px;
+      color: black;
+    }
+    
+    .bg-part2 {
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-part1">
+    <h1 class="page-title" style="color: #000;">USER PROFILE</h1>
+  </div>
+  
+  <div class="bg-part2">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="card p-3 py-4">
+            <div class="text-center">
+              <img src="https://th.bing.com/th/id/R.3bcb9885029ffb81f58fb4a46c6d854f?rik=caTmTHH%2bNuWv1w&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f8%2fd%2f1%2f798741-download-free-awesome-nature-backgrounds-1920x1080-for-tablet.jpg&ehk=%2fu8xawhlqhlABfauhjBvJm3YUpEq5Vjqj2FfHAGm%2bj8%3d&risl=&pid=ImgRaw&r=0" 
+              class="rounded-circle" alt="Rounded Image" height="160" width="170">
+            </div>
+            
+            <div class="text-center mt-3">
+              <h6 style="color: #8E24AA;">Hi, My name is</h6>
+              <h3 class="mt-2 mb-0">Alexender Schidmt</h3>
+              <span>Student - KCE</span>
+              <br>
+              <br>
+              <ul class="social-list">
+                <li>
+                  <i class="bi bi-person-fill"></i>
+                  <span class="additional-info">Male</span>
+                </li>
+                <li>
+                  <i class="bi bi-envelope-fill"></i>
+                  <span class="additional-info">email@example.com</span>
+                </li>
+                <li>
+                  <i class="bi bi-calendar2-event-fill"></i> 
+                  <span class="additional-info">11/02/2003</span>
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt-fill"></i> 
+                  <span class="additional-info">USA - Transalvaniya</span>
+                </li>
+                <li>
+                  <i class="bi bi-phone-fill"></i>
+                  <span class="additional-info">+91 9787862539</span>
+                </li>
+             
+                <li>
+                 
+               
+                 <button style="border: none;background: transparent;"type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" > 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" style="color: rgb(0, 0, 0);" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg>
+                </button>
+                  <span class="additional-info" style="font-size: 12px;color: #000;">Edit</span>
+                </li>
+              </ul>
+            </div> 
+          </div>    
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Profile</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form method="post" >
+            <div class="form-group">
+              <label class="form-label" for="customFile">Image</label>
+              <input type="file" class="form-control" id="customFile" required />
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="recipient-name" required>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="recipient-name" required>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Phone:</label>
+              <input type="text" class="form-control" id="recipient-name" required>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">DOB:</label>
+              <input type="date" class="form-control" id="recipient-name" required>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Location:</label>
+              <input type="text" class="form-control" id="recipient-name" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Gender</label>
+              <select class="form-control" id="exampleFormControlSelect1" required>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Address:</label>
+              <input type="text" class="form-control" id="recipient-name" required>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
